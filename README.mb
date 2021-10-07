@@ -3,6 +3,7 @@ Python SQL
 
 
 ## Populate SQL result to Dictionary
+
 ```
 con = sqlite3.connect(BACKUP_DIR)
 cur = con.cursor()
@@ -18,3 +19,5 @@ print(row)
 
 con.close()
 ```
+
+
