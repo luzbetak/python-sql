@@ -7,13 +7,13 @@ con = sqlite3.connect(BACKUP_DIR)
 cur = con.cursor()
 
 sql = '''SELECT * FROM student'''
-print(sql)
 cur.execute(sql)
 desc = cur.description
 column_names = [col[0] for col in desc]
 data = [dict(zip(column_names, row)) for row in cur.fetchall()]
+
 for row in data:
-print(row)
+    print(row)
 
 con.close()
 ```
