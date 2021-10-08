@@ -18,5 +18,7 @@ for row in data:
 con.close()
 ```
 
-
-
+### SQLite3 Date Base 
+```
+SELECT * FROM weather WHERE dt1 >= date('now', '-1', 'days') AND dt1 < date('now');
+```
